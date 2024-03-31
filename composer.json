@@ -1,0 +1,28 @@
+{
+    "name": "mydevpro/upayments",
+    "description": "UPayments integration for laravel 8",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mydevpro\\Upayments\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mohamed Youssef",
+            "email": "mydevpro1@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mydevpro\\Upayments\\PaymentServiceProvider"
+            ],
+            "aliases": {
+                "Upayments": "Mydevpro\\Upayments\\Facade"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {}
+}
